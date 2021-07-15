@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Tax simulator</title>
+    </head>
+    <body>
+        <h1>Old Regime Tax Simulator</h1>
+        <form method="POST" action="/tax_inputs/">
+        <p>Enter name : 
+            <input type="text" name="name" placeholder="your name here">
+        </p>
+        <p>Gross Annual Salary (INR) : 
+            <input type="number" name="gsalary" placeholder="add salary here">
+        </p>
+        <!-- radio button should have same tagname for single button selection -->
+        <p>PF mode : 
+            <input type="radio" name="pfmode" value="0"> Mode 1 (12 % of 15000) = 1800 p.a
+            <input type="radio" name="pfmode" value="1"> Mode 2 (12 % of basic salary) p.a
+        </p>
+        <p>
+            <center><input type="submit" value = 'Calculate'></center>
+        </p>
+        </form>
+    </body>
+</html>

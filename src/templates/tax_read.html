@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Data Collected</title>
+    </head>
+    <body>
+        <h1>Input Tax Data for {{user_data['name'].title()}}</h1>
+        <p>Gross Salary : INR {{user_data['gsalary']}}</p>
+        <p>PF mode selected : {{user_data['pfmode']}}</p>
+        <form action="/tax_payable/" method="POST">
+            <button type="submit" value="ok" name="submit">Confirm inputs</button>
+            <button type="submit" value="back" name="submit">Change</button>
+        </form>
+    </body>
+</html>
